@@ -1,0 +1,14 @@
+(dp0
+c__builtin__
+frozenset
+p1
+((lp2
+g1
+((lp3
+I3
+atp4
+Rp5
+atp6
+Rp7
+I6
+s.
