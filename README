@@ -1,0 +1,29 @@
+Monotone Boolean Function (MBF)
+===============================
+
+This repository contains the MBFs for 0 <= n <= 6.
+The directories contain the following data:
+ - mbf: list of all monotone boolean functions per profile
+ - imbfs: inequivalent MBF and number of MBF associated
+ - na-imbs: inequivalent MBF non-1additive and number of MBF associated
+ - n2a-imbs: inequivalent MBF non-2additive and number of MBF associated
+
+n |      D(n) |        N-1add D(n) |           N-2add D(n)
+--+-----------+--------------------+----------------------
+0 |         2 |         0 (00.00 %)|           0 (00.00 %)
+1 |         3 |         0 (00.00 %)|           0 (00.00 %)
+2 |         6 |         0 (00.00 %)|           0 (00.00 %)
+3 |        20 |         0 (00.00 %)|           0 (00.00 %)
+4 |       168 |        18 (10.71 %)|           0 (00.00 %)
+5 |     7 581 |     4 294 (56.64 %)|           0 (00.00 %)
+6 | 7 828 354 | 7 584 196 (96.88 %)|     145 502 (01.86 %)
+
+n  |   R(n) |      N-1add R(n) |           N-2add R(n)
+---+--------+------------------+----------------------
+0  |      2 |      0 (00.00 %) |           0 (00.00 %)
+1  |      3 |      0 (00.00 %) |           0 (00.00 %)
+2  |      5 |      0 (00.00 %) |           0 (00.00 %)
+3  |     10 |      0 (00.00 %) |           0 (00.00 %)
+4  |     30 |      4 (13.33 %) |           0 (00.00 %)
+5  |    210 |     91 (43.33 %) |           0 (00.00 %)
+6  | 16 353 | 15 240 (93.19 %) |         338 (02.07 %)
