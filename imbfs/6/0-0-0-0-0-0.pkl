@@ -1,9 +1,0 @@
-(dp0
-c__builtin__
-frozenset
-p1
-((lp2
-tp3
-Rp4
-I1
-s.
