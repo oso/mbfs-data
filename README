@@ -3,7 +3,7 @@ Monotone Boolean Function (MBF)
 
 This repository contains the MBFs for 0 <= n <= 6.
 The directories contain the following data:
- - mbf: list of all monotone boolean functions per profile
+ - mbfs: list of all monotone boolean functions per profile
  - imbfs: inequivalent MBF and number of MBF associated
  - na-imbs: inequivalent MBF non-1additive and number of MBF associated
  - n2a-imbs: inequivalent MBF non-2additive and number of MBF associated
