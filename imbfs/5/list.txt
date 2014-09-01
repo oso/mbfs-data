@@ -1,5 +1,5 @@
 Profile: 0-0-0-0-0
-IMBF() (1 MBFs)
+IMBF([]) (1 MBFs)
 
 Profile: 0-0-0-0-1
 IMBF([1, 2, 3, 4, 5]) (1 MBFs)
