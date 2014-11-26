@@ -1,12 +1,36 @@
 Monotone Boolean Function (MBF)
 ===============================
 
+Organization of the data
+------------------------
+
 This repository contains the MBFs for 0 <= n <= 6.
 The directories contain the following data:
  - mbfs: list of all monotone boolean functions per profile
  - imbfs: inequivalent MBF and number of MBF associated
  - na-imbs: inequivalent MBF non-1additive and number of MBF associated
  - n2a-imbs: inequivalent MBF non-2additive and number of MBF associated
+Each directory contains subfolders in which the (i)MBFs for n criteria are
+stored per profile. The MBFs are stored in pickle format and bzipped.
+To load the MBFs from these files, one can use the following Python code:
+  > import pickle, bz2
+  > f = bz2.BZ2File(filepath, 'rb')
+  > imbfs = pickle.load(f)
+  > f.close()
+Except for the objects in the "mbfs" directory, the imbfs object obtained
+after unpickling the file content is a dictionnary having as key the IMBF
+and as value the number of isomorphic MBFs associated to the IMBF.
+The format of the object after unpickling elements in the mbfs directory
+is a set containing the different MBFs.
+In each of these subdirectory, a file 'list.txt' contains the list of MBFs
+that are stored in the .pkl.bz2 files.
+
+Some results
+------------
+
+The first table below contains the number of different MBFs for n
+variables, D(n), and the number of MBFs that are not 1-additive, N-1add D(n),
+or 2-additive, N-2add R(n). For 0 <= n <= 6, all MBFs are 3-additive.
 
 n |      D(n) |        N-1add D(n)  |       N-2add D(n)
 --+-----------+---------------------+------------------
@@ -18,6 +42,11 @@ n |      D(n) |        N-1add D(n)  |       N-2add D(n)
 5 |     7 581 |     4 294 (56.64 %) |       0 (00.00 %)
 6 | 7 828 354 | 7 584 196 (96.88 %) | 145 502 (01.86 %)
 
+
+The second table contains the number of different Inequivalent MBFs (IMBFs)
+that are, R(n), and the number of IMBFs that are not 1-additive, N-1add R(n),
+or 2-additive, N-2add R(n).
+
 n  |   R(n) |      N-1add R(n) |   N-2add R(n)
 ---+--------+------------------+--------------
 0  |      2 |      0 (00.00 %) |   0 (00.00 %)
@@ -28,4 +57,13 @@ n  |   R(n) |      N-1add R(n) |   N-2add R(n)
 5  |    210 |     91 (43.33 %) |   0 (00.00 %)
 6  | 16 353 | 15 240 (93.19 %) | 338 (02.07 %)
 
-For 0 <= n <= 6, all MBFs are 3-additive.
+References
+----------
+
+* E. Ersek Uyanic, O. Sobrie, V. Mousseau, and M. Pirlot. Listing the
+  families of sufficient coalitions of criteria involved in sorting
+  procedures. In DA2PL 2014 Workshop From Multiple Criteria Decision Aid to
+  Preference Learning, pages 60-70, 2014. Paris, France
+
+* Tamon Stephen and Timothy Yusun, Counting inequivalent monotone Boolean
+  functions, Discrete Applied Mathematics, 167 (2014), 15-24.
