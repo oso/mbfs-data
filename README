@@ -10,6 +10,8 @@ The directories contain the following data:
  - imbfs: inequivalent MBF and number of MBF associated
  - na-imbs: inequivalent MBF non-1additive and number of MBF associated
  - n2a-imbs: inequivalent MBF non-2additive and number of MBF associated
+ - a-imbfs: inequivalent MBF 1additive and number of MBF associated
+ - 2a-imbfs: inequivalent MBF 2additive and number of MBF associated
 Each directory contains subfolders in which the (i)MBFs for n criteria are
 stored per profile. The MBFs are stored in pickle format and bzipped.
 To load the MBFs from these files, one can use the following Python code:
